@@ -19,7 +19,7 @@ class ParserVideoId(models.Model):
     # num_dislike = models.CharField(verbose_name='Количество дизлайков', max_length=255)
 
     def __str__(self):
-        return f'{self.creater}-number:{self.id}'
+        return '{}-number:{}'.format(self.creater, self.id)
 
     class Meta:
         verbose_name = "Данные видео"
